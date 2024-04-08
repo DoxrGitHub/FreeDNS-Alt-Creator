@@ -5,7 +5,7 @@
 
 Accounts are listed in accounts.txt
 
-If you're using replit, set an environment variable (`REP_OWNER`) to your username, to make sure that people can't fork your accounts.txt or use it. (Also, if you're using replit, don't use console because its super buggy, just run `python main.py` in shell and resize the terminal). Then, run `viu` and select yes at the installation prompt.
+If you're using replit, set an environment variable (`REP_OWNER`) to your username, to make sure that people can't fork your accounts.txt or use it. (Also, if you're using replit, don't use console because its super buggy, just run `python main.py` in shell and resize the terminal). Then, run `viu` and select yes at the installation prompt. Then, add this line in .replit: `onboot = '[ "$REP_OWNER" != "$REPL_OWNER" ] && rm acc.txt || echo "Booted with Account Confirmation"'`
 
 If you're NOT using Replit, just run it as normal. Run `pip install -r requirements.txt` (maybe pip3?) to install dependencies. You'll need to have `viu` (images in the terminal) installed (idk if the script will fail, but if the script doesn't die, then you can just check /tmp/captcha.png for the captcha if it's convienient.
 
